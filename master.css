@@ -362,7 +362,14 @@ height: 600px;
 
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 1366px)@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {
     .parallax, .parallax2, .parallax3 {
         background-attachment: scroll;
         position: relative;
