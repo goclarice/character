@@ -1,0 +1,400 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Main Styles*/
+body, html {
+	height: 100% ;
+	margin: 0; 
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.inside{
+	width:80%;
+	margin:0 auto;
+	padding:  30px;
+	}
+
+h1{
+    font-size:44px;
+	font-family:'Berkshire Swash', cursive;
+}
+
+p{
+	font-size:20px;
+	line-height:30px;
+}
+
+h2 {
+	font-size:44px;
+	margin-bottom: 30px;
+	
+}
+h3 {
+	font-size:30px;
+	margin-bottom: 30px;
+	
+}
+
+hr {
+	width:50%;
+}
+/* Header/Blog Title */
+div.header {
+	text-align: center;
+    background: white;
+}
+
+
+div.header h1 {
+	margin-top:50px;
+    padding: 10px;
+    font-size: 40px;
+    line-height: 1.6;
+	}
+
+/*Parallax images*/
+div.parallax {
+    /* The image used */
+    background-image: url(../images/blow-dry-bar-del-mar-chairs-counter-853427.jpg);
+
+    /* Full height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.parallax2 {
+    /* The image used */
+    background-image: url(../images/edward.jpg);
+
+    /* Full height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.parallax3 {
+	/* The image used */
+    background-image: url(../images/tanja-heffner-314087-unsplash.jpg);
+
+    /* Full height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size:cover;
+}
+
+/* Style the top navigation bar */
+#topnav {
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* Style the topnav links */
+#topnav.inside{
+	padding:0;
+}
+	
+#topnav ul  {
+	float: left;
+}
+#topnav ul li {
+	float: left;
+	margin-left:25px;
+	
+}
+
+#topnav ul li a{
+	color:white;
+    display: block;
+	text-decoration:none;
+	font-size:24px;
+	line-height: 40px;
+	padding: 16px;
+}
+
+
+#topnav ul#socialnav {
+	float: right;
+}
+#topnav ul#socialnav li {
+	float: left;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+.active {
+    color:            black;
+    background-color: white;
+}
+
+#topnav li.active a{
+	color:black;
+}
+	
+
+#topnav ul li:hover a{ 
+     color:black;
+}
+
+/*My Team Section*/
+#Team {
+	background-color: black;
+	color: gainsboro;
+    
+}
+
+#Team.inside {
+	float: right;
+	margin-left:80px;
+    
+}
+#Team img {
+	border-radius:15px;
+	float:center;
+	padding-top: 30px;
+}
+
+#Team h3{
+    padding-top: 15px;
+}
+
+
+div.flex-container {
+	display:inline-flex;
+	justify-content: center;
+    padding: 30px;
+	
+}
+
+div.flex-container> div {
+	margin:10px;
+	padding: 20px;
+
+}
+
+
+/*Slideimages*/
+div.slide1 img {
+  border-radius:50%;
+  width: auto;
+  height:650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+/*Logo*/
+.floatleft {
+   float:left;
+}
+
+img.w30 {
+	width: 30%;
+}
+
+
+
+/* style video */
+
+div.video-center {
+    text-align: center;
+	}
+
+
+/*Gallery Page*/
+
+div.slide2 img {
+	border-radius:25%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.gallery {
+	background-color:black;
+	margin-left: auto;
+	margin-right: auto;
+	display:flex;
+
+}
+
+div.gallery img {
+	border-radius: 15%;
+	margin-left: 15px;
+	margin-right: auto;
+	padding:20px;
+	width:25%;
+}
+
+
+div.gallery h1{
+	color:white;
+	text-align: center;
+	padding-bottom:30px;
+	}
+
+
+
+/*shop page*/
+  
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.flex .shopgallery {
+	flex: 0 1 23%;
+	margin: 1%;
+    border: 1px solid #ccc;
+	
+}
+
+.flex .shopgallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.shopgallery:hover {
+    border: 1px solid #777;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/*Pricing Page*/
+#Price {
+	background-image: url(../images/attractive-beautiful-beauty-432605.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+	padding-top: 30px;
+    padding-bottom: 15%;
+  
+}
+
+#Price p{
+	color: white;
+    font-size: 20px;
+    text-align: right;
+    line-height: 60px;
+    margin-right: 20px;
+	margin-top:20px;
+}
+
+#Price.inside {
+	float: right;
+	margin-left:80px;
+    padding: 30px;
+
+}
+
+
+    
+
+   
+	
+/*Contact us page*/
+
+div.hours p{
+	padding-top:20px;
+	padding-bottom:10px;
+	
+}
+
+.contact p{
+	padding-top:5px;
+	padding-bottom:5px;
+	color:#4b4b4b;
+	font-family:'Varela Round', sans-serif;
+	}
+
+.gif {
+	 float:center;
+	 padding-bottom:5px;
+	 margin-top:20px;
+	
+}
+
+#map {
+width: 100%;
+height: 600px;
+}
+
+
+
+#footer {
+	clear: both;
+	background: black;
+	color: white;
+	font-size: 18px;
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+        position: relative;
+        
+    }
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
