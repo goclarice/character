@@ -369,8 +369,17 @@ height: 600px;
         
     }
 
-
-
+	.parallax2 {
+        background-attachment: scroll;
+        position: relative;
+        
+    }
+	
+	.parallax3 {
+        background-attachment: scroll;
+        position: relative;
+        
+    }
 
 /**
  * For modern browsers
