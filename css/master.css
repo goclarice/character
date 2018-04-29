@@ -24,7 +24,7 @@ body {
 .inside{
 	width:80%;
 	margin:0 auto;
-	padding:  30px;
+	padding:  80px;
 	}
 
 h1{
@@ -48,9 +48,6 @@ h3 {
 	
 }
 
-hr {
-	width:50%;
-}
 /* Header/Blog Title */
 div.header {
 	text-align: center;
@@ -67,47 +64,22 @@ div.header h1 {
 
 /*Parallax images*/
 div.parallax {
-    /* The image used */
-    background-image: url(../images/blow-dry-bar-del-mar-chairs-counter-853427.jpg);
+    min-height: 500px;
+    background: transparent;
 
-    /* Full height */
-    height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 div.parallax2 {
-    /* The image used */
-    background-image: url(../images/edward.jpg);
+    min-height: 500px;
+    background: transparent;
 
-    /* Full height */
-    height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 div.parallax3 {
-	/* The image used */
-    background-image: url(../images/tanja-heffner-314087-unsplash.jpg);
+    min-height: 500px;
+    background: transparent;
 
-    /* Full height */
-    height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-	background-size:cover;
 }
-
 /* Style the top navigation bar */
 #topnav {
     overflow: hidden;
@@ -252,13 +224,18 @@ div.gallery img {
 	width:25%;
 }
 
+div.gallery. inside {
+	float: right;
+	margin-left:80px;
+	
+}
 
 div.gallery h1{
 	color:white;
 	text-align: center;
+	padding:5px;
 	padding-bottom:30px;
-	}
-
+}
 
 
 /*shop page*/
@@ -295,7 +272,7 @@ div.desc {
 	background-image: url(../images/attractive-beautiful-beauty-432605.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-	padding-top: 30px;
+	padding-top: 60px;
     padding-bottom: 15%;
   
 }
@@ -324,22 +301,13 @@ div.desc {
 /*Contact us page*/
 
 div.hours p{
-	padding-top:20px;
-	padding-bottom:10px;
+	padding-top:40px;
+	padding-bottom:20px;
 	
 }
 
-.contact p{
-	padding-top:5px;
-	padding-bottom:5px;
-	color:#4b4b4b;
-	font-family:'Varela Round', sans-serif;
-	}
-
-.gif {
+div.gif {
 	 float:center;
-	 padding-bottom:5px;
-	 margin-top:20px;
 	
 }
 
@@ -361,25 +329,9 @@ height: 600px;
 
 
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-        position: relative;
-        
-    }
 
-	.parallax2 {
-        background-attachment: scroll;
-        position: relative;
-        
-    }
-	
-	.parallax3 {
-        background-attachment: scroll;
-        position: relative;
-        
-    }
+
+
 
 /**
  * For modern browsers
